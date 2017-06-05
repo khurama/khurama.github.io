@@ -1,0 +1,213 @@
+body{
+	width:1280px;
+	height: 3000px;
+	background-color: black;
+	border: 0px;
+	margin:0px;
+	padding: 0px;
+}
+.container{
+	width:1280px;
+	height: 1980px;
+	background-color: black;
+	margin:0 auto;
+	margin-left: 100px;
+}
+.header{
+	
+	background-repeat: no-repeat;
+	background: url(img/kurama.png);
+	background-position: center;
+	width: 1280px;
+	height: 720px;
+	border: 0px;
+}
+.header-d{
+	padding-top: 350px;
+	border: 0px;
+}
+.button-header{
+	color: white;
+	font-family: heveltica;
+	text-align: center;
+	border: 0px;
+	clear: both;	
+}
+.titulo-header{
+	color: white;
+	font-family: heveltica;
+	text-align: center;
+	font-size: 200%;
+	margin: 0px;
+	border: 0px;
+} 
+
+.p-header{
+	color: white;
+	font-family: heveltica;
+	text-align: center;
+	font-size: 125%;
+	margin-top: 10px;
+	border: 0px;
+	
+}
+.menu-main {
+	position: fixed;
+	background-color: black;
+	font-family: heveltica;
+	width: 1280px;
+	height: 50px;
+	border: 0px;	
+}
+.menu-lista{
+	float: right;
+	left: 0px;
+	position: relative;
+	width: 300px;
+	height: 50px;
+	border: 0px;
+}
+.menu-home{
+	float: left;
+	position: relative;
+	right: -50px;
+	width: 100px;
+	height: 50px;
+	top: 15px;
+	border: 0px;
+}
+.sobre{
+	width: 1280px;
+	height:360px;
+	border: 0px;
+}
+.sobre-d{
+	width: 1280px;
+	height:360px;
+	padding-top: 40px;
+	border: 0px;
+}
+.p-sobre{
+	width: 300px;
+	height: 300px;
+	margin-left: 245px;
+	border:0px;
+}
+.contato{
+	background-color: transparent;
+	border: 0px;
+	width: 1280px;
+}
+.contato-d{
+	width: 1280px;
+	border: 0px;
+	padding-top: 40px;
+}
+.inf-contato{
+	width: 250px;
+	border: 0px;
+	margin: 0px;
+	margin-left:500px;
+	border: 0px;
+}
+.p-contato{
+	width: 300px;
+	margin-left: 500px;
+	border: 0px;
+}
+.img_telefone{
+	width: 50px;
+	height: 50px;
+	border: 0px;
+	margin:0px;
+	margin-left:35px;
+}
+.img_email{
+	width: 50px;
+	height: 50px;
+	border: 0px;
+	margin-left: 60px;
+}
+
+.contato-telefone{
+	width: 150px;
+	border:0px;
+	display:block;
+	float: left;
+	
+}
+.contato-email{
+	width: 100px;
+	border:0px;
+	float: right;
+	
+}
+.posts{
+	background-color: #7F5626;
+	border: 0px;
+	width: 1280px;
+	height: 960px;
+}
+.posts-d{
+	padding-top: 40px;
+	border: 0px;
+	
+}
+.footer{
+	border: 0px;
+	width: 1280px;
+	height: 90px;
+	background-color: #7F5626;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	clear: both;
+}
+.footer-d{
+	border:0px;
+	margin-left: 570px;
+	width: 150px;
+	height: 60px;
+	float: left;
+	margin-top: 22px;
+	clear: both;
+}
+.img_redesocial{
+	width:45px;
+	height:45px;
+	border: 0px;
+}
+ul {
+	list-style-type: none;
+}
+li{
+	display:inline;
+}
+a:link, a:visited, a:active { 
+	text-decoration:none; 
+	color: #CC7700;
+}
+a:hover{
+	text-decoration:none;
+	color: #FF9400;
+} 
+
+p{
+	color: white;
+	font-family: heveltica;
+	text-align: center;
+}
+h1 {
+	color: white;
+	font-family: heveltica;
+	text-align: center;
+}
+h4{
+	color: white;
+	font-family: heveltica;
+}
+hr{
+	color: light;
+	width: 200px;
+}
