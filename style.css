@@ -16,7 +16,7 @@ body{
 .header{
 	
 	background-repeat: no-repeat;
-	background: url(kurama.png);
+	background-image: url(kurama.png);
 	background-position: center;
 	width: 1280px;
 	height: 720px;
