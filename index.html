@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
 <meta charset="utf-8">
 <title>Estágio Even3</title>
@@ -6,11 +7,14 @@
 <link href="style.css" rel="stylesheet">
 
 <!--javascript-->
-
-
+<script type="application/javascript" src="angular.min.js"> </script>
+<script type="application/javascript" src="app.js"></script>
+<script type="application/javascript" src="posts.js"></script>
+<script type="application/javascript" src="comments.js"></script>
+<script type="application/javascript" src="users.js"></script>
 </head>
-<body id="page-top">
-<div class="container">
+<body id="page-top" data-ng-app="app">
+<div class="container" data-ng-app="app">
 	<div class="menu-main">
 		<nav class="nav">
 			<div class="menu-home">
@@ -50,22 +54,49 @@
 	</section>
 	<section id="posts" class="posts">
 		<div class="posts-d">
-			<div class="container-posts">
+			<div class="container-posts" data-ng-controller="postsCtrl">
 				<div class="titulo-post">
 					<h1>Postagens</h1>
 				</div>
-				<table class="tabela-post">
+				<table  class="tabela">
 					<tr>
-						<td>img</td>
+						<th>Email</th>
+						<th>Título</th>
+						<th>Descrição</th>
 					</tr>
-					<tr>
-						<td>post</td>
-					</tr>
-					<tr>
-						<td>coments</td>
+					<tr ng-repeat="posts in  postss | limitTo: 3">
+						<td>{{posts.email}}</td>
+						<td>{{posts.title}}</td>
+						<td>{{posts.body}}</td>
 					</tr>
 				</table>
 			</div>
+			</div data-ng-controller="commentsCtrl">
+				<table class="tabela">
+					<tr>
+						<th>Comentários</th>
+						<th>Descrição</th>
+					</tr>
+					<tr ng-repeat="comments in commentss | limitTo: 3">
+						<td>{{comments.title}}</td>
+						<td>{{comments.body}}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="users" data-ng-controller="usersCtrl">
+			<table class="tabela">
+				<tr>
+					<th>Name</th>
+					<th>Username</th>
+					<th>Email</th>
+				</tr>
+				<tr ng-repeat="users in userss | limitTo: 3">
+					<td>{{users.name}} </td>
+					<td>{{users.username}} </td>
+					<td>{{users.email}} </td>
+				</tr>
+			</table>
 		</div>
 	</section>
 	<section class="contato" id="contato">
@@ -78,11 +109,11 @@
 			</div>
 			<div class="inf-contato">
 				<div class="contato-telefone">
-					<img class="img_telefone" src="telefone.png" />
+					<img class="img_telefone" src="img/telefone.png" />
 					<h4 class="h3-telefone">(81) 99716-9260</h4>
 				</div>
 				<div class="contato-email">
-					<img class="img_email" src="email.png" />
+					<img class="img_email" src="img/email.png" />
 					<h4 class="h3-email">cavalcanti.xu@gmail.com</h4>
 				</div>
 			</div>
@@ -90,9 +121,9 @@
 	</section>
 	<footer class="footer">
 		<div class="footer-d">
-			<img class="img_redesocial" src="facebook.png" />
-			<img class="img_redesocial" src="instagram.png" />
-			<img class="img_redesocial" src="twitter.png" />
+			<img class="img_redesocial" src="img/facebook.png" />
+			<img class="img_redesocial" src="img/instagram.png" />
+			<img class="img_redesocial" src="img/twitter.png" />
 		</div>
 	</footer>
 </div>
