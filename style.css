@@ -1,22 +1,16 @@
 body{
-	width:1280px;
-	height: 3000px;
 	background-color: black;
-	border: 0px;
-	margin:0px;
-	padding: 0px;
 }
 .container{
 	width:1280px;
 	height: 1980px;
 	background-color: black;
-	margin:0 auto;
-	margin-left: 100px;
+	margin: 0 auto;	
 }
 .header{
 	
 	background-repeat: no-repeat;
-	background-image: url(kurama.png);
+	background: url(kurama.png);
 	background-position: center;
 	width: 1280px;
 	height: 720px;
